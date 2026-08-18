@@ -1,3 +1,5 @@
+[Anterior ⬅️](./03-Condicional-if-else.md) | [Siguiente ➡️](../03-Estructura-de-datos/01-Listas.md)
+
 # ➡️ Switch
 
 El switch evalúa una expresión y ejecuta el bloque de código correspondiente al caso que coincida con el valor de esa expresión. En lugar de ir probando múltiples condiciones con if y else if, el switch agrupa todo de manera más estructurada.

@@ -1,3 +1,5 @@
+[Anterior ⬅️](./02-metodos-array.md) | [Inicio 🏠](/README.md) | [Siguiente ➡️](./04-Metodos-listas.md)
+
 # Colección dinámica
 
 Las listas son similares a los arrays, pero tienen una ventaja importante: son dinámicas. Puedes añadir o eliminar elementos fácilmente. En C#, las listas pertenecen al espacio de nombres `System.Collections.Generic`, y ofrecen una gran flexibilidad. *(C# docs - get started, tutorials, reference, 2023)*

@@ -1,3 +1,5 @@
+[Anterior ⬅️](./02-condicional-else.md) | [Siguiente ➡️](./04-Switch.md)
+
 # ➡️ Condicional else if
 
 Pero ¿qué pasa cuando tienes más de una condición que revisar? Para eso tenemos el else if, que te permite manejar múltiples caminos posibles, una opción a la vez.

@@ -1,3 +1,5 @@
+[Anterior ⬅️](./01-Condicional-if.md) | [Siguiente ➡️](./03-Condicional-if-else.md)
+
 # ➡️ Condicional "else"
 
 El **else** ejecuta un bloque de código alternativo cuando la condición del **if** resulta falsa.

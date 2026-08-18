@@ -1,3 +1,5 @@
+[Anterior ⬅️](../02-Control-de-flujo/04-Switch.md) | [Inicio 🏠](/README.md) | [Siguiente ➡️](./02-metodos-array.md)
+
 # ➡️ Array
 
 ### Almacenando múltiples datos de un mismo tipo

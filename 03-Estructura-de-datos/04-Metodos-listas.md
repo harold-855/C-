@@ -1,3 +1,5 @@
+[Anterior ⬅️](./03-listas.md) | [Inicio 🏠](/README.md) | [Siguiente ➡️](./05-Metodos.md)
+
 # Métodos y Propiedades de las Listas en C#
 
 Las listas en C# (`List<T>`) proporcionan varias propiedades y métodos muy útiles para administrar y manipular colecciones de elementos.

@@ -1,3 +1,5 @@
+[Anterior ⬅️](./01-Array.md) | [Inicio 🏠](/README.md) | [Siguiente ➡️](./03-listas.md)
+
 ```markdown
 # Métodos y Propiedades de los Arrays en C#
 
