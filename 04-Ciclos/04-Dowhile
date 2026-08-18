@@ -1,0 +1,56 @@
+# Ciclo do...while
+
+El ciclo do...while, es similar al ciclo while, pero con una *diferencia clave*: garantiza que el bloque de código se ejecutará al menos una vez, ya que la condición se evalúa al final de cada iteración. Esto lo hace útil cuando deseas que el código se ejecute al menos una vez antes de verificar una condición.
+
+La sintaxis básica del ciclo do...while es la siguiente:
+
+```csharp
+do
+{
+    // Código a ejecutar
+} while (condición);
+
+```
+
+*Cómbita-Téllez, J. (2024). Captura de pantalla del código, Ejemplo de la sintaxis del ciclo do while*
+
+---
+
+### Ejemplo de uso del ciclo do...while
+
+Un contador básico que imprime un mensaje al menos una vez antes de verificar la condición:
+
+```csharp
+int contador = 1;
+
+do
+{
+    Console.WriteLine($"Iteración número: {contador}");
+    contador++;
+} while (contador <= 3);
+
+```
+
+---
+
+### Ejemplo con entrada del usuario
+
+Ideal para solicitar datos y repetir la petición hasta que la respuesta cumpla con un requisito:
+
+```csharp
+string opcion;
+
+do
+{
+    Console.WriteLine("Menú Principal:");
+    Console.WriteLine("1. Ver perfil");
+    Console.WriteLine("2. Salir");
+    Console.Write("Selecciona una opción: ");
+    
+    opcion = Console.ReadLine();
+
+} while (opcion != "2");
+
+Console.WriteLine("¡Has salido con éxito!");
+
+```

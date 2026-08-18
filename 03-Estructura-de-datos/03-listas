@@ -1,0 +1,73 @@
+# Colección dinámica
+
+Las listas son similares a los arrays, pero tienen una ventaja importante: son dinámicas. Puedes añadir o eliminar elementos fácilmente. En C#, las listas pertenecen al espacio de nombres `System.Collections.Generic`, y ofrecen una gran flexibilidad. *(C# docs - get started, tutorials, reference, 2023)*
+
+# Sintaxis
+
+```csharp
+List<int> numbers = new List<int>();
+numbers.Add(10);
+```
+
+---
+
+**Un array en C#** es una estructura de datos de tamaño fijo, lo que significa que debes definir su tamaño desde el principio y no puedes agregar más elementos después. Por otro lado, una lista es dinámica y se ajusta según las necesidades, permitiéndote agregar o eliminar elementos en cualquier momento sin preocuparte por el tamaño inicial. Esto hace que las listas sean más flexibles para trabajar con conjuntos de datos que cambian o crecen.
+
+**Nota:** Las listas en C# cuentan con propiedades y métodos específicos que facilitan su manejo. 
+
+
+---
+
+
+
+En C#, existen varias formas de inicializar una lista (`List<T>`):
+
+### 1. Usando el inicializador de colecciones (*Collection Initializer*)
+
+Permite definir e insertar los elementos de la lista directamente en la declaración.
+
+```csharp
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+
+```
+
+---
+
+### 2. Usando el constructor por defecto
+
+Crea una lista vacía que puede rellenarse más adelante.
+
+```csharp
+List<int> emptyList = new List<int>();
+
+```
+
+---
+
+### 3. Agregando elementos individualmente
+
+Se crea la lista vacía y luego se agregan los elementos uno por uno con el método `Add`.
+
+```csharp
+List<string> fruits = new List<string>();
+fruits.Add("Apple");
+fruits.Add("Banana");
+fruits.Add("Orange");
+
+```
+
+---
+
+### 4. Convirtiendo un Array a Lista
+
+Pasa una colección existente (como un arreglo) directamente al constructor de la lista para copiar sus elementos.
+
+```csharp
+string[] colorsArray = { "Red", "Green", "Blue" };
+List<string> colorsList = new List<string>(colorsArray);
+
+```
+
+---
+
+Estos ejemplos ilustran diferentes formas de inicializar y poblar una lista en C#. Cada método tiene su caso de uso según si comienzas con datos existentes o si estás construyendo la lista de forma dinámica.

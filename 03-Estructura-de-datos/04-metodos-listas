@@ -1,0 +1,128 @@
+# Métodos y Propiedades de las Listas en C#
+
+Las listas en C# (`List<T>`) proporcionan varias propiedades y métodos muy útiles para administrar y manipular colecciones de elementos.
+
+---
+
+## Propiedades
+
+### 1. `Count`
+
+La propiedad `Count` devuelve el número de elementos que están presentes actualmente en la lista.
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+int count = numbers.Count; // Devuelve 3
+
+```
+
+### 2. `Capacity`
+
+La propiedad `Capacity` indica el número total de elementos que la lista puede albergar internamente antes de necesitar redimensionarse.
+
+```csharp
+List<int> numbers = new List<int>(10); // Se inicializa con una capacidad de 10
+int capacity = numbers.Capacity; // Devuelve 10
+
+```
+
+### 3. `IsReadOnly`
+
+La propiedad `IsReadOnly` indica si la lista es solo de lectura, lo que significa que sus elementos no se pueden modificar.
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+bool isReadOnly = numbers.IsReadOnly; // Devuelve false (por defecto)
+
+```
+
+---
+
+## Métodos
+
+### Agregar elementos a una lista
+
+Puedes agregar elementos a una lista utilizando el método `Add`:
+
+```csharp
+List<int> numbers = new List<int>();
+numbers.Add(60); // Agrega el número 60 al final de la lista
+
+// También puedes agregar múltiples elementos a la vez usando el método AddRange:
+numbers.AddRange(new int[] { 70, 80, 90 }); // Agrega los números 70, 80 y 90 al final de la lista
+
+```
+
+### Acceder a los elementos de una lista
+
+Puedes acceder a los elementos mediante su índice, al igual que con los arreglos (arrays):
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+int firstNumber = numbers[0]; // Accede al primer elemento (10)
+
+```
+
+### Buscar elementos en una lista
+
+Puedes encontrar elementos utilizando el método `Find`, el cual devuelve el primer elemento que cumpla con la condición especificada:
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+int result = numbers.Find(number => number > 20); // Encuentra el primer elemento mayor a 20
+
+```
+
+Para encontrar **todos** los elementos que cumplan con una condición, puedes usar el método `FindAll`:
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+List<int> results = numbers.FindAll(number => number > 20); // Encuentra todos los elementos mayores a 20
+
+```
+
+### Modificar elementos en una lista
+
+Puedes modificar los elementos accediendo a ellos directamente a través de su índice:
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+numbers[0] = 100; // Cambia el primer elemento de 10 a 100
+
+```
+
+### Ordenar una lista
+
+Puedes ordenar los elementos de una lista usando el método `Sort`:
+
+```csharp
+List<int> numbers = new List<int> { 30, 10, 20 };
+numbers.Sort(); // Ordena la lista en orden ascendente (10, 20, 30)
+
+```
+
+### Eliminar elementos de una lista
+
+Puedes eliminar elementos de una lista usando el método `Remove` (el cual elimina la primera ocurrencia del valor especificado):
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+numbers.Remove(30); // Elimina la primera ocurrencia del valor 30
+
+```
+
+También puedes eliminar elementos por su posición de índice utilizando el método `RemoveAt`:
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30 };
+numbers.RemoveAt(1); // Elimina el elemento en el índice 1 (el 20)
+
+```
+
+Para eliminar todos los elementos de la lista que cumplan con una condición específica, utiliza el método `RemoveAll`:
+
+```csharp
+List<int> numbers = new List<int> { 10, 20, 30, 40, 50 };
+numbers.RemoveAll(number => number > 30); // Elimina todos los elementos mayores a 30
+
+```
